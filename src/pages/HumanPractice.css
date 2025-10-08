@@ -1,0 +1,184 @@
+/* 🌌 Layout & Background */
+.page-container {
+  position: relative;
+  min-height: 100vh;
+  background-color: #f9fafb;
+  overflow-x: hidden;
+}
+
+.bg-particles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem; /* Adjusted gap for better spacing */
+}
+
+/* 🟦 Hero Section */
+.hero-section {
+  text-align: center;
+}
+
+.hero-card {
+  background: rgba(207, 250, 254, 0.7);
+  backdrop-filter: blur(6px);
+  padding: 3rem 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #083344;
+  letter-spacing: -0.5px;
+}
+
+.hero-text {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  color: #155e75;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 👨‍🏫 Sections */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #06b6d4, #2563eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 3rem;
+}
+
+/* 🧍 Person Card */
+.person-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border-left: 4px solid #06b6d4;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%; /* Ensure cards in a row are same height */
+}
+
+.person-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.person-image {
+  width: 7rem;
+  height: 7rem;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.person-info {
+  text-align: center;
+}
+
+.person-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.person-quote {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #4b5563;
+}
+
+/* 🧩 Grids */
+.grid-mentors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.grid-stakeholders {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+/* ✅ NEW STYLES for text and image sections */
+.text-section {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
+  padding: 2rem 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+  color: #374151;
+  line-height: 1.7;
+}
+
+.text-section h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #083344;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.text-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.text-section li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.text-section li::before {
+  content: '🔹';
+  position: absolute;
+  left: 0;
+  color: #06b6d4;
+}
+
+.framework-section {
+  text-align: center;
+}
+
+.framework-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  margin-bottom: 1rem;
+}
+
+.caption {
+  font-style: italic;
+  color: #6b7280;
+  max-width: 600px;
+  margin: 0 auto;
+}
